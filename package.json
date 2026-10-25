@@ -14,8 +14,8 @@
     "body-parser": "^1.14.2",
     "bson": ">=1.0.5",
     "ejs": "^3.1.8",
-    "express": "^4.13.3",
-    "mongodb": "^3.3.4"
+    "express": "^4.22.3",
+    "mongodb": "4.17"
   },
   "devDependencies": {
     "minimist": ">=1.2.2",
