@@ -1,14 +1,18 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const MongoClient = require('mongodb').MongoClient
 
+
 let db, collection;
 
-const url = "mongodb+srv://demo:demo@cluster0-q2ojb.mongodb.net/test?retryWrites=true";
-const dbName = "demo"; //This is the mongo URL - this is the url that in the mongodb atlas website
+const url = process.env.MONGODB_URI
+const dbName = "savage-demo"; //This is the mongo URL - this is the url that in the mongodb atlas website
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000
+
+app.listen(PORT, () => {
   MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, (error, client) => {
     if (error) {
       throw error;
