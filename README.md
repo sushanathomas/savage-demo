@@ -10,7 +10,7 @@ I built this project to practice CRUD functionality using Node.js, Express, EJS,
 
 ## Screenshot
 
-<!-- Add a screenshot of your application here. -->
+<img width="600" height="600" alt="savage-demo" src="https://github.com/user-attachments/assets/cb824c26-ce84-4c3a-af9d-6fa786516787" />
 
 ## Features
 
