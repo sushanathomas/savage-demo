@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>21 Savage Fans</title>
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>21 Savage</h1>
-  <h2>Why you trappin so hard?</h2>
 
+  <h1>21 SAVAGE</h1>
+  <h2>Why you trappin so hard?</h2>
 
   <h3>Messages</h3>
   <ul class="messages">
+
   <% for(let i=0; i<messages.length; i++) {%>
     <li class="message">
       <span><%= messages[i].name %></span>
@@ -24,6 +26,7 @@
       <span><i class="fa fa-trash" aria-hidden="true"></i></span>
     </li>
   <% } %>
+
   </ul>
 
   <h2>Add a message</h2>
@@ -33,6 +36,10 @@
     <input type="text" placeholder="message" name="msg">
     <button type="submit">Submit</button>
   </form>
+
+  <p id="twentyOne">
+  <iframe src="https://giphy.com/embed/z5LVlcS00LVaYd34qI" width="480" height="269" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/snl-saturday-night-live-season-49-z5LVlcS00LVaYd34qI"></a></p>
+  </p>
 
   <script src="main.js"></script>
 
